@@ -1,10 +1,7 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:flutter_test_riverpod/features/todos/domain/UseCase/delete_todo_usecase.dart';
 import 'package:flutter_test_riverpod/features/todos/presentation/viewmodels/todolist/todo_list_viewmodel.dart';
 
 import '../../domain/Model/todo.dart';
-import '../../domain/Model/todo_list.dart';
-import '../../domain/RepositoryInterface/todos_repository.dart';
 
 final todoViewModelProvider =
     Provider.autoDispose.family<TodoViewModel, Todo?>((ref, todo) {

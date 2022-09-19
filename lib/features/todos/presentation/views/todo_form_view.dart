@@ -10,14 +10,13 @@ class TodoFormView extends ConsumerStatefulWidget {
   const TodoFormView({super.key, this.todo});
 
   @override
-  _TodoFormViewState createState() => _TodoFormViewState();
+  TodoFormViewState createState() => TodoFormViewState();
 }
 
-class _TodoFormViewState extends ConsumerState<TodoFormView> {
+class TodoFormViewState extends ConsumerState<TodoFormView> {
   late final TodoViewModel _viewModel;
-  final _formKey = GlobalKey<FormState>();
 
-  _TodoFormViewState();
+  TodoFormViewState();
 
   @override
   void initState() {
@@ -128,9 +127,4 @@ class _TodoFormViewState extends ConsumerState<TodoFormView> {
       Navigator.pop(context);
     }
   }
-}
-
-class _DisabledFocusNode extends FocusNode {
-  @override
-  bool get hasFocus => false;
 }

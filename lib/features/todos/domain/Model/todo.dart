@@ -26,14 +26,14 @@ class Todo {
   }
 
   @override
-  bool operator ==(Object o) {
-    if (identical(this, o)) return true;
+  bool operator ==(Object other) {
+    if (identical(this, other)) return true;
 
-    return o is Todo &&
-        o.id == id &&
-        o.title == title &&
-        o.description == description &&
-        o.completed == completed;
+    return other is Todo &&
+        other.id == id &&
+        other.title == title &&
+        other.description == description &&
+        other.completed == completed;
   }
 
   @override

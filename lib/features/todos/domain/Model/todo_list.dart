@@ -40,7 +40,7 @@ class TodoList {
         todos: todos.where((todo) => todo.completed != completed).toList());
   }
 
-  TodoList getTodoById(final int id) {
+  TodoList getTodoById(final String id) {
     return TodoList(todos: todos.where((todo) => todo.id == id).toList());
   }
 }

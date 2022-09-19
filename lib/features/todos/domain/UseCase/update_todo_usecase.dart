@@ -1,6 +1,3 @@
-import 'package:dartz/dartz.dart';
-
-import '../../../../Core/error/failure.dart';
 import '../RepositoryInterface/todos_repository.dart';
 
 class UpdateTodo {
